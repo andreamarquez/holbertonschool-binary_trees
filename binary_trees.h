@@ -12,17 +12,21 @@
  */
 struct binary_tree_s
 {
-    int value;
-    struct binary_tree_s *parent;
-    struct binary_tree_s *left;
-    struct binary_tree_s *right;
+	int value;
+	struct binary_tree_s *parent;
+	struct binary_tree_s *left;
+	struct binary_tree_s *right;
 };
 
 typedef struct binary_tree_s binary_tree_t;
 
 /* PROTOTYPES */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
-void binary_tree_print(const binary_tree_t *tree);  /* Add this line */
+
+/**
+ * binary_tree_print - Prints a binary tree
+ * @tree: Pointer to the root node of the tree to print
+ */
+void binary_tree_print(const binary_tree_t *tree);
 
 #endif /* BINARY_TREES_H */
-
